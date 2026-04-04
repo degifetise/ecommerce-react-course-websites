@@ -1,10 +1,12 @@
+.page {
+  padding: 2rem 0.5rem;
+}
 /* navbar style */
 .navbar {
   background: #f5f5f5;
   border-bottom: 1px solid #eaeaea;
   padding: 0.75rem 1rem;
   font-family: "Segoe UI", sans-serif;
-  backdrop-filter: blur(20px);
 }
 .navbar-container {
   display: flex;
@@ -234,4 +236,94 @@
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
+}
+
+/* //auth section styel */
+*/
+/* Auth for style*/
+.container {
+  display: flex;
+  min-height: 100vh;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  width: 100%;
+}
+.Auth-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 480px;
+  width: 100%;
+  background: #34495e;
+  border-radius: 12px;
+  box-shadow:
+    inset,
+    4px 12px 16px rgba(0, 0, 0, 0.1);
+}
+.page-title {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+.form-group {
+  margin-bottom: 0.5rem;
+}
+.form-group .form-label {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.form-group .form-input {
+  margin-top: 1.3rem;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  max-width: 100%;
+}
+.input-error {
+  font-size: 1rem;
+  font-weight: 600;
+  color: red;
+}
+.auth-switch p {
+text-align: center;
+color: #34a9ce;
+cursor: pointer;
+transition: color 0.3s ease;
+}
+.auth-switch p:hover {
+color: #00c6ff;
+}
+.auth-switch p span {
+background: #0056b3;
+color: #fff;
+padding: .2rem 1rem;
+border-radius: 6px;
+}
+
+.auth-switch p .auth-link{
+width: 80%;
+}
+
+.logout {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logout button {
+  width: 80%;
 }
