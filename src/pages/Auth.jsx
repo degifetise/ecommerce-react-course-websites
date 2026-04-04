@@ -38,7 +38,7 @@ function Auth() {
   return (
     <div>
       <div className="page">
-        <div className="container">
+        <div className=".auth-page-container">
           <div className="Auth-container">
             {user && <p> {user.username}</p>}
             <h1 className="page-title">
