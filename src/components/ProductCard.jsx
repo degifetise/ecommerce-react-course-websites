@@ -4,7 +4,7 @@ export default function ProductCard({ product }) {
   return (
     <div className="product-card" /* key={product.id} */>
       <div className="product-card-image-wrapper">
-        <img src={product.image} className="product-card-image" />
+        <img src={product.image} className="product-card-image" alt={product.name} />
         <div className="product-card-overlay">
           <Link to={`/products/${product.id} `} className="overlay-btn">
             Quick View
