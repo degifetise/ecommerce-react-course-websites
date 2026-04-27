@@ -16,6 +16,7 @@ const products = [
       "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=400&auto=format&fit=crop&q=60",
     description:
       "Track your fitness, heart rate, and notifications with this sleek smartwatch.",
+    details: "This is details",
   },
   {
     id: 3,
@@ -235,4 +236,8 @@ const products = [
 
 export function getProducts() {
   return products;
+}
+
+export function getProductById(id) {
+  return products.find((p) => p.id === Number(id));
 }
